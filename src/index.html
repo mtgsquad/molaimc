@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Electro Beta Launcher</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./assets/fontawesome/css/all.min.css">
+</head>
+<body>
+
+    <div class="ls-info-cont" id="ls-info-cont">Error</div>
+    <div class="ls-versionlist-cont" id="ls-versionlist-cont">
+        <!-- <div class="ls-vl-child">1.16.5</div>
+        <div class="ls-vl-child">1.12.2</div>
+        <div class="ls-vl-child">1.8.7</div> -->
+    </div>
+
+    <div class="titlebar-cont">
+        <div class="tb-title-cont">Lite Beta Launcher</div>
+        <div class="tb-btn-cont">
+            <div class="tb-devtools-cont tb-btn" onclick="doWin('devtools')"><i class="fas fa-code"></i></div>
+            <div class="tb-settings-cont tb-btn" onclick="doWin('settings')"><i class="fas fa-cog"></i></div>
+            <div class="tb-minimize-cont tb-btn" onclick="doWin('minimize')"><i class="fas fa-circle"></i></div>
+            <div class="tb-maximize-cont tb-btn" onclick="doWin('maximize')"><i class="fas fa-square"></i></div>
+            <div class="tb-close-cont tb-btn" onclick="doWin('close')"><i class="fas fa-times"></i></div>
+        </div>
+    </div>
+
+    <div class="main-screen">
+
+        <div class="login-screen">
+            <div class="ls-top">
+                <div class="linp-cont">
+                    <input type="text" placeholder="Username" class="username-inp linp-txt" id="username-inp" onkeyup="checkUsernameInp()"><br>
+                    <input type="password" placeholder="Password" class="password-inp linp-txt inp-disabled" id="password-inp">
+                    <div class="l-bottom-inp">
+                        <div class="lbi-left">
+                            <div class="l-checkbox-inp lci-pass" id="l-checkbox-inp-pass" onclick="OfflineOrOnline()" onmouseenter="mouseEnterCheck(this, 'Cracked / Premium')" onmouseleave="mouseLeaveCheck()"></div>
+                            <div class="l-checkbox-inp lci-rme inp-disabled" id="l-checkbox-inp-rme" onclick="RembrMe()" onmouseenter="mouseEnterCheck(this, 'Remember Me')" onmouseleave="mouseLeaveCheck()"></div>
+                            <div class="l-checkbox-inp lci-snap" id="l-checkbox-inp-snap" onclick="ToggleSnapshots()" onmouseenter="mouseEnterCheck(this, 'Toggle Snapshots')" onmouseleave="mouseLeaveCheck()"></div>
+                            <div class="l-checkbox-inp lci-hide l-cb-filled" id="l-checkbox-inp-hide" onclick="toggleHideLauncher()" onmouseenter="mouseEnterCheck(this, 'Hide Launcher when Minecraft Starts')" onmouseleave="mouseLeaveCheck()"></div>
+                            <div class="l-dropdown-inp lddi-vers" id="l-dropdown-inp-vers" onclick="toggleVList(this)">Error</div>
+                            <!-- <y>Remember Me</y> -->
+                        </div>
+                        <div class="lbi-right"><div class="l-enter-btn inp-disabled" id="l-enter-btn" onclick="lsEnter()"><i class="fas fa-angle-right"></i></div></div>
+                    </div>
+                </div>
+                <div class="ls-loading-bar-cont" id="ls-loading-bar-cont">
+                    <div class="ls-loading-bar" id="ls-loading-bar"></div>
+                </div>
+            </div>
+            <div class="ls-bottom">Made By Ezzer29#5883</div>
+        </div>
+
+    </div>
+
+    <script src="./index.js"></script>
+</body>
+</html>

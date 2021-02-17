@@ -1,0 +1,53 @@
+{
+  "name": "litebetalauncher",
+  "version": "2.7.3",
+  "description": "A Simple and Discord like looking Minecraft Launcher.",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "mac": "electron-packager . --overwrite --platform=darwin --arch=x64 --icon=assets/icons/mac/icon.icns --prune=true --out=release-builds",
+    "win": "electron-packager . litebetalauncher --overwrite --asar=true --platform=win32 --arch=ia32 --icon=assets/icons/win/icon.ico --prune=true --out=release-builds --version-string.CompanyName=EZ --version-string.FileDescription=EZ --version-string.ProductName=\"Lite Beta Launcher\"",
+    "linux": "electron-packager . litebetalauncher --overwrite --asar=true --platform=linux --arch=x64 --icon=assets/icons/png/1024x1024.png --prune=true --out=release-builds",
+    "deb64": "electron-installer-debian --productName \"Lite Beta Launcher\" --icon assets/icons/png/1024x1024.png --src release-builds/litebetalauncher-linux-x64/ --dest release-builds/installers/ --arch amd64",
+    "dist": "electron-builder"
+  },
+  "author": "Ezzer29 <ezzerelectron@gmail.com>",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Ezzer29/LiteBetaLauncher.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Ezzer29/LiteBetaLauncher/issues"
+  },
+  "homepage": "https://github.com/Ezzer29/LiteBetaLauncher",
+  "dependencies": {
+    "discord-rpc": "^3.1.4",
+    "jquery": "^3.5.1",
+    "minecraft-launcher-core": "^3.16.1"
+  },
+  "devDependencies": {
+    "electron": "^11.2.1",
+    "electron-builder": "^22.9.1",
+    "electron-installer-debian": "^3.1.0",
+    "electron-packager": "^15.2.0"
+  },
+  "build": {
+    "appId": "com.ezzer29.litebetalauncher",
+    "productName": "Lite Beta Launcher",
+    "directories": {
+      "output": "build/out"
+    },
+    "win": {
+      "target": "nsis"
+    },
+    "linux": {
+      "target": "deb"
+    },
+    "deb": {},
+    "nsis": {
+      "oneClick": false,
+      "allowToChangeInstallationDirectory": true
+    }
+  }
+}
