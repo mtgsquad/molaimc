@@ -13,8 +13,8 @@ npm dist
 ```
 btw, sorry for the shitty instructions :)...
 #### I might add:
-forge and stuff
-fabric support
+forge and stuff<br>
+fabric support<br>
 other stuff....
 
 Ezzer29#5883 on discord :)
