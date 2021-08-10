@@ -9,7 +9,7 @@ npm install
 npm start
 # build
 npm dist
-# btw, u need nodejs and npm installed (electron and maby electron-builder installed globally)
+# btw, u need nodejs and npm installed (electron and maybe electron-builder installed globally)
 ```
 btw, sorry for the shitty instructions :)...
 #### I might add:
