@@ -1,22 +1,14 @@
 {
-  "name": "litebetalauncher",
-  "version": "2.7.3",
-  "description": "A Simple and Discord like looking Minecraft Launcher.",
+  "name": "molaimc",
+  "version": "2.0.0",
+  "description": "Simple Minimalistic Minecraft Launcher",
   "main": "main.js",
   "scripts": {
     "start": "electron .",
     "dist": "electron-builder"
   },
-  "author": "Ezzer29 <ezzerelectron@gmail.com>",
+  "author": "MTGSquad <mahir@molai.dev>",
   "license": "MIT",
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/Ezzer29/LiteBetaLauncher.git"
-  },
-  "bugs": {
-    "url": "https://github.com/Ezzer29/LiteBetaLauncher/issues"
-  },
-  "homepage": "https://github.com/Ezzer29/LiteBetaLauncher",
   "dependencies": {
     "discord-rpc": "^3.1.4",
     "jquery": "^3.5.1",
@@ -27,8 +19,8 @@
     "electron-builder": "^22.9.1"
   },
   "build": {
-    "appId": "com.ezzer29.litebetalauncher",
-    "productName": "Lite Beta Launcher",
+    "appId": "dev.molai.MolaiMC",
+    "productName": "MolaiMC",
     "directories": {
       "output": "build/out"
     },

@@ -36,14 +36,14 @@ let opts = {
     // handling authentication outside before you initialize
     // MCLC so you can handle auth based errors and validation!
     authorization: Authenticator.getAuth("undefined"),
-    root: "./.lite_launcher",
+    root: "./.molaimc",
     version: {
-        number: "1.16.5",
+        number: "1.8.9",
         type: "release"
     },
     memory: {
-        max: "6G",
-        min: "4G"
+        max: "4G",
+        min: "2G"
     }
 
     // overrides: {
